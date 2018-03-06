@@ -1,0 +1,45 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "electron-builder ",
+    "start": "electron .",
+    "dev": "npm run start"
+  },
+  "build": {
+    "appId": "com.electron.gka",
+    "productName": "gka",
+    "copyright": "Copyright © 2018 joeyguo",
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "7zip-bin-win": "^2.1.1",
+    "electron": "~1.7.8",
+    "electron-builder": "^19.55.3"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "gka": "^2.5.4",
+    "gka-tpl-canvas": "^1.1.5",
+    "imagex": "^0.0.3",
+    "jquery": "^3.2.1"
+  }
+}
