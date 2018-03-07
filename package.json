@@ -31,13 +31,12 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "7zip-bin-win": "^2.1.1",
     "electron": "~1.7.8",
     "electron-builder": "^19.55.3"
   },
   "dependencies": {
     "colors": "^1.1.2",
-    "gka": "^2.5.4",
+    "gka": "^2.6.0",
     "gka-tpl-canvas": "^1.1.5",
     "imagex": "^0.0.3",
     "jquery": "^3.2.1"

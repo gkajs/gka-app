@@ -33,7 +33,6 @@ ipcRenderer.on('gka-over', function (event, data) {
 
 addCheckboxEvt();
 
-
 function generateGka() {
     function configReader() {
         let configKey = [
@@ -97,7 +96,7 @@ function generateGka() {
                     if (parseInt(val)) {
                         return val
                     } else {
-                        return 1;
+                        return 0;
                     }
                 }
             },
@@ -136,6 +135,5 @@ function addCheckboxEvt() {
             btn.innerHTML = evt.target.innerHTML;
             console.log(evt.target.innerHTML)
         })
-
     })
 }
