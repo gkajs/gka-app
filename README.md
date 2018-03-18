@@ -9,8 +9,6 @@ app
         --ipc.js 前端与后台ipc通道逻辑
 ```
 
-## 待补充
-
 ## 打包命令
 
 ```
@@ -18,3 +16,9 @@ pack:win    windows平台
 pack:mac    mac平台
 pack:linux  linux平台
 ```
+
+## 预览
+
+![1](./README/1.png)
+
+![2](./README/2.png)
