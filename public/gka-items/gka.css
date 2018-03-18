@@ -1,16 +1,16 @@
 .gka-wrap {
-    width: 670px;
-    height: 23px;
+    width: 266px;
+    height: 219px;
 }
 
-.prefixanimation {
-    width: 670px;
-    height: 23px;
-    background-image: url("./img/prefix-0.png");
+.prefix-animation {
+    width: 266px;
+    height: 219px;
+    background-image: url("./img/prefix--0.png");
     background-repeat: no-repeat;
 
-    animation-name: prefixkeyframes;
-    animation-duration: 0.12s;
+    animation-name: prefix-keyframes;
+    animation-duration: 0.25s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     
@@ -18,20 +18,37 @@
     animation-timing-function: steps(1);
 }
 
-@-webkit-keyframes prefixkeyframes {
+@-webkit-keyframes prefix-keyframes {
     0% {
-        width: 670px;
-        height: 23px;
-        background-image: url("./img/prefix-0.png");
+        width: 266px;
+        height: 219px;
+        background-image: url("./img/prefix--0.png");
+        background-position: -244px 0;
     }
-    33.33% {
-        background-image: url("./img/prefix-1.png");
+    20.00% {
+        width: 413px;
+        height: 211px;
+        background-position: -510px 0;
     }
-    66.67% {
-        background-image: url("./img/prefix-2.png");
+    40.00% {
+        width: 521px;
+        height: 238px;
+        background-position: -1368px 0;
+    }
+    60.00% {
+        width: 244px;
+        height: 183px;
+        background-position: 0 0;
+    }
+    80.00% {
+        width: 445px;
+        height: 230px;
+        background-position: -923px 0;
     }
     100% {
-        background-image: url("./img/prefix-2.png");
+        width: 445px;
+        height: 230px;
+        background-position: -923px 0;
     }
 }
 

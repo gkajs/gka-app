@@ -1,19 +1,36 @@
-## gka-app
-
-## gka 逻辑
-
-```
-├── main            客户端逻辑
-├── main.js         electron windows的初始化操作
-├── package.json
-├── public          公有文件，包括gka生成的文件
-└── render          前端展示逻辑
+## Quick start
+```bash
+npm start
 ```
 
+## DevTools
 
-public/index.html，前端页面
+Toggle DevTools:
 
-main/logic.js       main函数是客户端逻辑的入口，会在electron windows初始化之后调用
-render              前端用到的一些展示逻辑
+* OSX: <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
+* Linux: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
+* Windows: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
 
-主要注意一下前端与客户端api通信的过程，是用过ipc调用的，这里监听ipc事件之后进行相应的操作
+## Packaging
+
+Modify [electron-builder.yml](./electron-builder.yml) to edit package info.
+
+For a full list of options see: https://github.com/electron-userland/electron-builder/wiki/Options.
+
+Create a package for OSX, Windows and Linux
+```
+npm run pack
+```
+
+Or target a specific platform
+```
+npm run pack:mac
+npm run pack:win
+npm run pack:linux
+```
+
+## Tests
+
+```
+npm run test
+```
