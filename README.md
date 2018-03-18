@@ -1,36 +1,18 @@
-## Quick start
-```bash
-npm start
-```
+## gka 目录结构
 
-## DevTools
+app
+    --main.js electron主入口
+    --gka.js  gka后台生成逻辑
+    --app.js  前端页面入口
+    --ipc
+        --ipc.js 前端与后台ipc通道逻辑
 
-Toggle DevTools:
+## 待补充
 
-* OSX: <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
-* Linux: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
-* Windows: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd> or <kbd>F12</kbd>
-
-## Packaging
-
-Modify [electron-builder.yml](./electron-builder.yml) to edit package info.
-
-For a full list of options see: https://github.com/electron-userland/electron-builder/wiki/Options.
-
-Create a package for OSX, Windows and Linux
-```
-npm run pack
-```
-
-Or target a specific platform
-```
-npm run pack:mac
-npm run pack:win
-npm run pack:linux
-```
-
-## Tests
+## 打包命令
 
 ```
-npm run test
+pack:win    windows平台
+pack:mac    mac平台
+pack:linux  linux平台
 ```
